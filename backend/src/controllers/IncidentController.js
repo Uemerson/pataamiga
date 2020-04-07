@@ -21,6 +21,8 @@ module.exports = {
         'ongs.whatsapp',
         'ongs.city',
         'ongs.uf',
+        'ongs.facebook',
+        'ongs.instagram'
       ]);
 
     return res.json(incidents);

@@ -7,7 +7,7 @@ module.exports = {
     },
 
     async create(req, res) {
-        const { name, email, whatsapp, city, uf } = req.body;
+        const { name, email, whatsapp, city, uf, facebook, instagram } = req.body;
 
         const id = generateUniqueId();
         
@@ -18,6 +18,8 @@ module.exports = {
             whatsapp,
             city,
             uf,
+            facebook,
+            instagram
         });
     
         return res.json({ id });
